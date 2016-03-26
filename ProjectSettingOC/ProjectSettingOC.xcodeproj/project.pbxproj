@@ -51,6 +51,7 @@
 		471BF97D1CA68CAA00CDB9C8 /* ProjectSettingOCUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectSettingOCUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		471BF9811CA68CAA00CDB9C8 /* ProjectSettingOCUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProjectSettingOCUITests.m; sourceTree = "<group>"; };
 		471BF9831CA68CAA00CDB9C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		471BF98F1CA68F0800CDB9C8 /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +104,7 @@
 			children = (
 				471BF95F1CA68CAA00CDB9C8 /* AppDelegate.h */,
 				471BF9601CA68CAA00CDB9C8 /* AppDelegate.m */,
+				471BF98F1CA68F0800CDB9C8 /* PrefixHeader.pch */,
 				471BF9621CA68CAA00CDB9C8 /* ViewController.h */,
 				471BF9631CA68CAA00CDB9C8 /* ViewController.m */,
 				471BF9651CA68CAA00CDB9C8 /* Main.storyboard */,
@@ -353,6 +355,8 @@
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ProjectSettingOC/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -394,6 +398,9 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/ProjectSettingOC/PrefixHeader.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = "";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -496,6 +503,7 @@
 				471BF9881CA68CAA00CDB9C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		471BF9891CA68CAA00CDB9C8 /* Build configuration list for PBXNativeTarget "ProjectSettingOCTests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +512,7 @@
 				471BF98B1CA68CAA00CDB9C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		471BF98C1CA68CAA00CDB9C8 /* Build configuration list for PBXNativeTarget "ProjectSettingOCUITests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +521,7 @@
 				471BF98E1CA68CAA00CDB9C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
