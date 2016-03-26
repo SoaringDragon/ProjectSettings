@@ -14,6 +14,7 @@
 		471BF92B1CA6864C00CDB9C8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 471BF9291CA6864C00CDB9C8 /* LaunchScreen.storyboard */; };
 		471BF9361CA6864C00CDB9C8 /* ProjectSettingsSwiftTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471BF9351CA6864C00CDB9C8 /* ProjectSettingsSwiftTests.swift */; };
 		471BF9411CA6864C00CDB9C8 /* ProjectSettingsSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471BF9401CA6864C00CDB9C8 /* ProjectSettingsSwiftUITests.swift */; };
+		471BF94F1CA6882300CDB9C8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 471BF94E1CA6882300CDB9C8 /* Constants.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		471BF93C1CA6864C00CDB9C8 /* ProjectSettingsSwiftUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ProjectSettingsSwiftUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		471BF9401CA6864C00CDB9C8 /* ProjectSettingsSwiftUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProjectSettingsSwiftUITests.swift; sourceTree = "<group>"; };
 		471BF9421CA6864C00CDB9C8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		471BF94E1CA6882300CDB9C8 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				471BF9271CA6864C00CDB9C8 /* Assets.xcassets */,
 				471BF9291CA6864C00CDB9C8 /* LaunchScreen.storyboard */,
 				471BF92C1CA6864C00CDB9C8 /* Info.plist */,
+				471BF94E1CA6882300CDB9C8 /* Constants.swift */,
 			);
 			path = ProjectSettingsSwift;
 			sourceTree = "<group>";
@@ -258,6 +261,7 @@
 			files = (
 				471BF9231CA6864C00CDB9C8 /* ViewController.swift in Sources */,
 				471BF9211CA6864C00CDB9C8 /* AppDelegate.swift in Sources */,
+				471BF94F1CA6882300CDB9C8 /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -351,6 +355,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_SWIFT_FLAGS = "-DDebug";
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -388,6 +393,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_SWIFT_FLAGS = "-DRelease";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -482,6 +488,7 @@
 				471BF9471CA6864C00CDB9C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		471BF9481CA6864C00CDB9C8 /* Build configuration list for PBXNativeTarget "ProjectSettingsSwiftTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +497,7 @@
 				471BF94A1CA6864C00CDB9C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		471BF94B1CA6864C00CDB9C8 /* Build configuration list for PBXNativeTarget "ProjectSettingsSwiftUITests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +506,7 @@
 				471BF94D1CA6864C00CDB9C8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
