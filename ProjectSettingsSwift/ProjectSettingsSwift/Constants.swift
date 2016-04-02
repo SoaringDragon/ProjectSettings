@@ -8,16 +8,11 @@
 
 import Foundation
 
-#if Debug
-
-let ServerURL = "DebugURL"
-
+#if DEVELOPMENT
+let SERVER_URL = "https://dev.server.com/api/"
+let API_TOKEN = "DI2023409jf90ew"
 #else
-
-    #if Release
-        
-      let ServerURL = "ReleaseRUL"
-        
-    #endif
-
+let SERVER_URL = "http://pro.server.com/api/"
+let API_ToKEN = "71ahsjddhhddj234"
 #endif
+
