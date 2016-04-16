@@ -7,6 +7,14 @@
 //
 
 import UIKit
+import Crashlytics
+import Optimizely
+
+internal var messageKey =
+    OptimizelyVariableKey.optimizelyKeyWithKey("message", defaultNSString: "Hello World!")
+
+internal var reportTimeBlocksKey =
+    OptimizelyCodeBlocksKey("reportTimeBlocks", blockNames: ["alert", "button"])
 
 class ViewController: UIViewController {
 
@@ -37,6 +45,76 @@ class ViewController: UIViewController {
         print(timeOffset5)
 
         print(SERVER_URL)
+        
+        let button = UIButton(type: UIButtonType.RoundedRect)
+        button.frame = CGRectMake(20, 50, 100, 30)
+        button.setTitle("Crash", forState: UIControlState.Normal)
+        button.addTarget(self, action:#selector(ViewController.crashButtonTapped(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        view.addSubview(button)
+
+        Crashlytics.sharedInstance().setObjectValue("Test value", forKey: "Crash")
+        
+        
+        let messageButton1 = UIButton(type: UIButtonType.System)
+        messageButton1.setTitle("Show Message", forState: UIControlState.Normal)
+        messageButton1.addTarget(self, action: #selector(ViewController.showMessage(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        messageButton1.frame = CGRectMake(25, 60, 200, 50)
+        view.addSubview(messageButton1)
+
+        
+        let messageButton = UIButton(type: UIButtonType.System)
+        messageButton.setTitle("Report Time", forState: UIControlState.Normal)
+        messageButton.addTarget(self, action: #selector(ViewController.reportTime(_:)), forControlEvents: UIControlEvents.TouchUpInside)
+        messageButton.frame = CGRectMake(25, 400, 300, 50)
+        view.addSubview(messageButton)
+
+    }
+   
+    override func viewWillAppear(animated: Bool) {
+        
+        super.viewWillAppear(animated)
+        
+        
+    }
+    func crashButtonTapped(sender : AnyObject){
+        
+        Answers.logCustomEventWithName("View controller did load", customAttributes: [
+            "Poem" : "Poem Event",
+            "Them" : "Them",
+            "Length" : "1209",
+            "Picture" : "Picture"
+            ])
+
+        Crashlytics.sharedInstance().crash()
+    }
+    @IBAction func showMessage(sender: AnyObject) {
+        let alert = UIAlertController(title: "Live Variable",
+                                      message: Optimizely.stringForKey(messageKey),
+                                      preferredStyle: UIAlertControllerStyle.Alert)
+        alert.addAction(UIAlertAction(title: "OK",
+            style: UIAlertActionStyle.Default,
+            handler: nil))
+        presentViewController(alert, animated: true) {}
+    }
+
+    @IBAction func reportTime(sender: AnyObject) {
+        let message = NSString(format: "It is %@", NSDate()) as String;
+        Optimizely.codeBlocksWithKey(reportTimeBlocksKey,
+                                     blockOne: {
+                                        let alert = UIAlertController(title: "Live Variable",
+                                            message: message,
+                                            preferredStyle: UIAlertControllerStyle.Alert)
+                                        alert.addAction(UIAlertAction(title: "OK",
+                                            style: UIAlertActionStyle.Default,
+                                            handler: { (action) -> Void in }))
+                                        self.presentViewController(alert, animated: true) {}
+            },
+                                     blockTwo: {
+                                        sender.setTitle(message, forState: UIControlState.Normal)
+            },
+                                     defaultBlock: {
+                                        print(message)
+        })
     }
 
     override func didReceiveMemoryWarning() {

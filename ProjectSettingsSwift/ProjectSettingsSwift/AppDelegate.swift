@@ -7,6 +7,9 @@
 //
 
 import UIKit
+import Fabric
+import Crashlytics
+import Optimizely
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -15,6 +18,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         // Override point for customization after application launch.
+        
+        Fabric.sharedSDK().debug = true
+        
+        Fabric.with([Crashlytics.self, Optimizely.self])
+        
+        Optimizely.startOptimizelyWithAPIToken("AANO7ZkBrBBMCvtni3CXah6U-mwHNkT6~5640121080", launchOptions:launchOptions)
+
+      
+        self.logUser()
+        
         
         //print(ServerURL)
         #if DEBUG
@@ -48,5 +61,22 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
 
+    func application(application: UIApplication, openURL url: NSURL, sourceApplication: String?, annotation: AnyObject) -> Bool {
+        if Optimizely.handleOpenURL(url) {
+            return true
+        }
+        
+        return false
+    }
 }
-
+extension AppDelegate {
+    //给Crashlytics添加用户的基本信息
+    func logUser() {
+        // TODO: Use the current user's information
+        // You can call any combination of these three methods
+        Crashlytics.sharedInstance().setUserEmail("user@fabric.io")
+        Crashlytics.sharedInstance().setUserIdentifier("12345")
+        Crashlytics.sharedInstance().setUserName("Test User")
+        Crashlytics.sharedInstance().setObjectValue(NSDate(), forKey: "CrashDate")
+    }
+}

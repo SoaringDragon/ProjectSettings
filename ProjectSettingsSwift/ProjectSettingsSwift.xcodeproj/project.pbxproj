@@ -194,6 +194,7 @@
 				471BF91B1CA6864C00CDB9C8 /* Resources */,
 				4A89C9BF558BDF9485A63414 /* Embed Pods Frameworks */,
 				4C3ABABF91BE36977020953C /* Copy Pods Resources */,
+				474192D61CBE8710004D8D05 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -250,6 +251,7 @@
 				47EA65061CAF416700013D3F /* Resources */,
 				B52040C2139A0F674B18EF86 /* Embed Pods Frameworks */,
 				54E36133EF947598F0A7A994 /* Copy Pods Resources */,
+				474192D51CBE86B7004D8D05 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -342,6 +344,32 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		474192D51CBE86B7004D8D05 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" b281a2d809d60c5bd8a3550df06ecb83796c0373 e57f4de20020f8646bccf3f7fcbfb17e86bc613444975a8a5426c65191801f83";
+		};
+		474192D61CBE8710004D8D05 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Fabric/run\" e6835fd5c217a71facd0868b8d83b24ffc7feaa1 d69eaa02af7369fb52f986b1402d686bbed7053e6938586640a6d74aeceb307d";
+		};
 		4A89C9BF558BDF9485A63414 /* Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -596,6 +624,7 @@
 			baseConfigurationReference = 85E58E3121EC0875DA62E745 /* Pods-ProjectSettingsSwift.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEBUG=1",
@@ -680,6 +709,7 @@
 			baseConfigurationReference = 07A70F17C2166D006969B183 /* Pods-PSSwift_Dev.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Dev";
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"$(inherited)",
 					"DEBUG=1",

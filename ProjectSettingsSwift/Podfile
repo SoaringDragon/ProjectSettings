@@ -6,6 +6,7 @@
 target 'ProjectSettingsSwift' do
 pod 'Fabric'
 pod 'Crashlytics'
+pod 'Optimizely-iOS-SDK'
 end
 
 target 'ProjectSettingsSwiftTests' do
@@ -19,5 +20,7 @@ end
 target 'PSSwift_Dev' do
 pod 'Fabric'
 pod 'Crashlytics'
+pod 'Optimizely-iOS-SDK'
+
 end
 

@@ -31,34 +31,6 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
-		<key>0C073BB2FC315075B9DE90C24FE2C52B</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Crashlytics.framework</string>
-			<key>path</key>
-			<string>iOS/Crashlytics.framework</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>0FBADD4C4C312933525779355B4A728B</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>5AF2ED3E1B1DF375ACFB148B356F91A5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Crashlytics</string>
-			<key>path</key>
-			<string>Crashlytics</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>11EF2164169829315470FAFE1CD9F83B</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -124,19 +96,6 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>23F124B36981587A4F2E341B8AEC8517</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>E1B6F2CE97837747A137B7F9EC710EF8</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
 		<key>2C076088535D422203BC8F62E5331E92</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -178,6 +137,21 @@
 			<key>isa</key>
 			<string>XCConfigurationList</string>
 		</dict>
+		<key>2F6405DA112C9D832B9C5D253C26C140</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>4BF9E2929E3BBA7C58142D7952E8C13C</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Fabric</string>
+			<key>path</key>
+			<string>Fabric</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>308DFF829B02A26BA361983763133829</key>
 		<dict>
 			<key>includeInIndex</key>
@@ -186,6 +160,19 @@
 			<string>PBXFileReference</string>
 			<key>path</key>
 			<string>Pods-PSSwift_Dev.modulemap</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>33D60FCB3C88616729B1DBFC2FD6D43F</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>571E2AB6E71D850B55B58A79A92676A4</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -340,17 +327,27 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
-		<key>4C01CE7C97A1F4AA2AA6283DCBF4679A</key>
+		<key>4BF9E2929E3BBA7C58142D7952E8C13C</key>
 		<dict>
 			<key>children</key>
 			<array>
-				<string>0FBADD4C4C312933525779355B4A728B</string>
-				<string>BD8B321ABCC17A2AA08C4077E26ECA81</string>
+				<string>915B4D0E06F0F5C5972DE4FACC00A5EB</string>
 			</array>
 			<key>isa</key>
 			<string>PBXGroup</string>
 			<key>name</key>
-			<string>Pods</string>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>571E2AB6E71D850B55B58A79A92676A4</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>path</key>
+			<string>Optimizely.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -360,19 +357,6 @@
 			<string>3E4E89230EF59BC255123B67864ACF77</string>
 			<key>isa</key>
 			<string>PBXBuildFile</string>
-		</dict>
-		<key>5AF2ED3E1B1DF375ACFB148B356F91A5</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>0C073BB2FC315075B9DE90C24FE2C52B</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
 		</dict>
 		<key>66DD09F3AF8CD828DD6B5364BF26DBB9</key>
 		<dict>
@@ -507,7 +491,7 @@
 			<array>
 				<string>BA6428E9F66FD5A23C0A2E06ED26CD2F</string>
 				<string>BC3CA7F9E30CC8F7E2DD044DD34432FC</string>
-				<string>4C01CE7C97A1F4AA2AA6283DCBF4679A</string>
+				<string>91124A5DB03571288209DC71A47454E6</string>
 				<string>6D0C6A14D1735533A3C7153DF970BF13</string>
 				<string>2D4B19ECC79EA1C12D297CEF2FA43437</string>
 			</array>
@@ -591,6 +575,62 @@
 			<key>name</key>
 			<string>Release</string>
 		</dict>
+		<key>910EBDF78EF1816745647414707E0548</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>33D60FCB3C88616729B1DBFC2FD6D43F</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Optimizely-iOS-SDK</string>
+			<key>path</key>
+			<string>Optimizely-iOS-SDK</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>91124A5DB03571288209DC71A47454E6</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>9BFCF0912BAAA5B30B5F39094043A86D</string>
+				<string>2F6405DA112C9D832B9C5D253C26C140</string>
+				<string>910EBDF78EF1816745647414707E0548</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Pods</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>915B4D0E06F0F5C5972DE4FACC00A5EB</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Fabric.framework</string>
+			<key>path</key>
+			<string>iOS/Fabric.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>91F2394FEE156D64FC7D74AAC4FE7876</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>B294C176883CDB7EE1CAF6E18D44CAB6</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Frameworks</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>9733BFA2818555684C9E358F435C8970</key>
 		<dict>
 			<key>buildConfigurations</key>
@@ -615,6 +655,21 @@
 			<string>text.plist.xml</string>
 			<key>path</key>
 			<string>Pods-ProjectSettingsSwift-acknowledgements.plist</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
+		<key>9BFCF0912BAAA5B30B5F39094043A86D</key>
+		<dict>
+			<key>children</key>
+			<array>
+				<string>91F2394FEE156D64FC7D74AAC4FE7876</string>
+			</array>
+			<key>isa</key>
+			<string>PBXGroup</string>
+			<key>name</key>
+			<string>Crashlytics</string>
+			<key>path</key>
+			<string>Crashlytics</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -770,6 +825,19 @@
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
+		<key>B294C176883CDB7EE1CAF6E18D44CAB6</key>
+		<dict>
+			<key>isa</key>
+			<string>PBXFileReference</string>
+			<key>lastKnownFileType</key>
+			<string>wrapper.framework</string>
+			<key>name</key>
+			<string>Crashlytics.framework</string>
+			<key>path</key>
+			<string>iOS/Crashlytics.framework</string>
+			<key>sourceTree</key>
+			<string>&lt;group&gt;</string>
+		</dict>
 		<key>B36A755A1BB7C997901CE080C4180E7C</key>
 		<dict>
 			<key>buildActionMask</key>
@@ -823,21 +891,6 @@
 			<string>PBXGroup</string>
 			<key>name</key>
 			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>BD8B321ABCC17A2AA08C4077E26ECA81</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>23F124B36981587A4F2E341B8AEC8517</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Fabric</string>
-			<key>path</key>
-			<string>Fabric</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
@@ -1056,19 +1109,6 @@
 			<string>sourcecode.c.objc</string>
 			<key>path</key>
 			<string>Pods-PSSwift_Dev-dummy.m</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>E1B6F2CE97837747A137B7F9EC710EF8</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>wrapper.framework</string>
-			<key>name</key>
-			<string>Fabric.framework</string>
-			<key>path</key>
-			<string>iOS/Fabric.framework</string>
 			<key>sourceTree</key>
 			<string>&lt;group&gt;</string>
 		</dict>
